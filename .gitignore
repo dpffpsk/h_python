@@ -224,3 +224,5 @@ dmypy.json
 .pyre/
 
 # End of https://www.gitignore.io/api/git,python,pycharm
+
+.idea/
