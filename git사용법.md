@@ -53,3 +53,44 @@
 
    - CLI(command line interface) 현재 상태를 알기 위해 반드시 명어를 통해 확인한다.
    - 커밋할 목록에 담겨있는지, untracked인지, 커밋할 내역이 있는지 등등 다양한 정보를 알려준다.
+
+## 원격저장소 활용하기
+
+1. 원격저장소(remote repository) 등록하기
+
+   ```bash
+   $ git remote add origin ____경로____
+   ```
+
+   - 원격 저장소(`remote`)를 등록(`add`)한다.  `origin` 이름으로 `경로`를!
+   - 최초에 한번만 등록하면 된다.
+   - 아래의 명령어로 현재 등록된 원격 저장소를 확인할 수 있다.
+
+   ```bash
+   $ git remote --v
+   origin  https://github.com/dpffpsk/h_python.git (fetch)
+   origin  https://github.com/dpffpsk/h_python.git (push)
+   ```
+
+2. 원격 저장소에 올리기(push)
+
+   ```bash
+   $ git push origin master 
+   ```
+
+   - `git!` 올려줘(`push`) `origin`이라는 이름의 원격저장소에 `master` 로!
+
+3. 원격 저장소로부터 가져오기(`pull`)
+
+   ```bash
+   $ git pull origin master
+   ```
+
+## 원격 저장소 복제(clone)하기
+
+```bash
+$ git clone ___경로___
+```
+
+- 다운받기를 원하는 폴더에서 `git bash`를 열고 위의 명령어를 입력한다.
+  - 경로는 `git hub`에서 우측에 있는 초록색 버튼을 누르면 나타난다.
