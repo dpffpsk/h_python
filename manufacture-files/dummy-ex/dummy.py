@@ -1,6 +1,3 @@
-# import os # 운영체제 인터페이스
-# os.system('git status')
-
 import os
 import random
 
@@ -11,3 +8,12 @@ for i in range(3):
     cmd = f"touch {str(i + 1)}_{random.choice(family)}{random.choice(given)}.txt"
     print(cmd)
     os.system(cmd)
+
+
+# 결과 : 3개의 파일이 생성 됨
+# $ python dummy.py
+# 1_이길동.txt
+# 2_조소미.txt
+# 3_한수진.txt
+
+

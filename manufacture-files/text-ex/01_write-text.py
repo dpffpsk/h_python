@@ -15,5 +15,11 @@ with 블럭이 종료되면 자동으로 파일을 닫는다.
 f = open('mulcam.txt', 'w')
 for i in range(1,6):
     f.write(f'Hapy Hacking {i}\n')
-
 f.close()
+
+# 결과
+# Hapy Hacking 1
+# Hapy Hacking 2
+# Hapy Hacking 3
+# Hapy Hacking 4
+# Hapy Hacking 5

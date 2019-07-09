@@ -1,29 +1,35 @@
-print("얄루")
-print("만나서 반갑")
-print("'ㅅ'")
-
 a = list(range(5))
 print(a)
+# [0, 1, 2, 3, 4]
 
 for i in range(5):
     print(i)
+# 0
+# 1
+# 2
+# 3
+# 4
 
-#List
-#배열로 여러개의 멤버변수를 가질 수 있으며 index를 통한 접근이 가능, 다른 언어에서는 Array
+
+
+# sorted : 배열을 정렬해주지만 원본을 바꾸지 않는다.
+# sort : 배열을 정렬해주고 원본도 바꾼다.
 number=[0,2,1,3]
+print(sorted(number))
+# [0, 1, 2, 3]
 
-#sorted함수는 배열을 정렬해주지만 원본을 바꾸지 않는다.
-#sort함수는 배열을 정렬해주고 원본도 바꾼다.
-
-print(number.sort())
+number.sort()
 print(number)
+# [0, 1, 2, 3]
 
-#Dictionary
-#Key와 Value로 이루어진 자료구조
-#다른 언에서는 map, object라고도 불린다.
+
 
 p={"중국집":123, "일식집":344}
 print(p["중국집"])
+# 123
 print(p["일식집"])
+# 344
 print(p.values())
+# dict_values([123, 344])
 print(p.keys())
+# dict_keys(['중국집', '일식집'])

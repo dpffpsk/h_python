@@ -1,4 +1,5 @@
 # numbers.txt의 내용을 뒤집어서 저장한다.
+
 with open('numbers.txt', 'r') as f:
     lines = f.readlines()
 
